@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "https://aaaryangupta.com/#faqpage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Who is Aaryan Gupta?", "acceptedAnswer": {"@type": "Answer", "text": "Aaryan Gupta is a Technical Project Manager based in Jaipur, India, specializing in health-tech digital transformation and SaaS project coordination. MCA graduate (AKTU, 2025) managing 20+ projects across 70+ global markets."}},
+    {"@type": "Question", "name": "What does a Technical Project Manager do?", "acceptedAnswer": {"@type": "Answer", "text": "A Technical PM owns the full project lifecycle — requirement scoping through deployment and release governance. Unlike traditional PMs, a technical PM understands codebases, challenges engineering estimates, and prevents costly misunderstandings before they happen."}},
+    {"@type": "Question", "name": "Does Aaryan Gupta work with doctors and clinics?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — health-tech is a primary specialization. Aaryan helps doctors and clinic owners digitize clinical workflows, build patient management systems, and coordinate healthcare app development. Serving Jaipur, Ahmedabad, and pan-India."}},
+    {"@type": "Question", "name": "Is Aaryan Gupta available for freelance projects?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — accepting freelance and consulting engagements for Technical PM, AI automation, website maintenance, and project coordination globally. Free 30-minute consultation available."}},
+    {"@type": "Question", "name": "How can I contact Aaryan Gupta?", "acceptedAnswer": {"@type": "Answer", "text": "Email: aryanrajk63@gmail.com | Phone: +91 62056 50368 | LinkedIn: linkedin.com/in/aryanony | Website: aaaryangupta.com. Book a free 30-minute consultation via the contact section."}}
+  ]
+}

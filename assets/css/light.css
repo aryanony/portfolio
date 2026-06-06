@@ -1,0 +1,31 @@
+/* ═══ LIGHT MODE TOKENS ═══ */
+[data-theme="light"] {
+  --bg-void:      #EBF7F2;
+  --bg-deep:      #F2FAF7;
+  --bg-surface:   #FFFFFF;
+  --bg-card:      rgba(255,255,255,0.92);
+  --bg-card-hi:   #FFFFFF;
+  --bg-input:     #F7FDFB;
+  --neon-primary: #006B52;
+  --neon-cyan:    #0077A8;
+  --neon-blue:    #0055CC;
+  --neon-aqua:    #005F99;
+  --text-bright:  #03100D;
+  --text-primary: #0A2019;
+  --text-secondary:#1F5A48;
+  --text-muted:   #5A8A7A;
+  --text-inverse: #FFFFFF;
+  --border-void:   rgba(0,107,82,0.06);
+  --border-subtle: rgba(0,107,82,0.12);
+  --border-accent: rgba(0,107,82,0.28);
+  --border-strong: rgba(0,107,82,0.58);
+  --glow-sm:  none;
+  --glow-md:  none;
+  --glow-lg:  none;
+  --shadow-card:   0 1px 3px rgba(0,80,60,0.08), 0 4px 16px rgba(0,80,60,0.06);
+  --shadow-card-hv:0 4px 24px rgba(0,80,60,0.15), 0 0 0 1px var(--border-accent);
+  --text-accent: var(--neon-primary);
+  --nav-bg:    rgba(240,251,248,0.9);
+  --nav-border:rgba(0,107,82,0.12);
+  color-scheme: light;
+}

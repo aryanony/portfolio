@@ -1,0 +1,32 @@
+[
+  {
+    "id": "t1",
+    "name": "Dr. Rajesh M.",
+    "role": "General Physician",
+    "location": "Jaipur",
+    "initials": "DR",
+    "stars": 5,
+    "text": "Aaryan understood our clinic workflow before recommending any technology. He didn't just manage a project — he translated clinical reality into a product the staff actually uses every day.",
+    "category": "healthtech"
+  },
+  {
+    "id": "t2",
+    "name": "Samira K.",
+    "role": "CTO, HealthTech Startup",
+    "location": "Ahmedabad",
+    "initials": "SK",
+    "stars": 5,
+    "text": "Most PMs can't challenge engineering decisions. Aaryan flagged a critical API integration risk before it hit production — saving us three weeks and a painful rollback.",
+    "category": "healthtech"
+  },
+  {
+    "id": "t3",
+    "name": "Michael T.",
+    "role": "Founder, SaaS Platform",
+    "location": "London, UK",
+    "initials": "MT",
+    "stars": 5,
+    "text": "Cross-timezone delivery with zero confusion. Clear sprint goals, release checklists, aligned stakeholders every step. This is what serious project management looks like.",
+    "category": "saas"
+  }
+]

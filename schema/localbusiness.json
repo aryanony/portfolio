@@ -1,0 +1,38 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": "https://aaaryangupta.com/#business",
+  "name": "Aaryan Gupta — Technical Project Manager",
+  "description": "Freelance Technical Project Management, Health-Tech Consulting, AI Automation, and Website Maintenance services in Jaipur, Ahmedabad, and globally.",
+  "url": "https://aaaryangupta.com",
+  "telephone": "+916205650368",
+  "email": "aryanrajk63@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Jaipur",
+    "addressRegion": "Rajasthan",
+    "addressCountry": "IN"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 26.9124,
+    "longitude": 75.7873
+  },
+  "areaServed": [
+    {"@type": "City", "name": "Jaipur"},
+    {"@type": "City", "name": "Ahmedabad"},
+    {"@type": "Country", "name": "India"}
+  ],
+  "priceRange": "₹₹",
+  "openingHours": "Mo-Fr 09:00-19:00",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Technical PM Services",
+    "itemListElement": [
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Technical Project Management"}, "priceSpecification": {"@type": "PriceSpecification", "price": "25000", "priceCurrency": "INR"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Health-Tech Consulting"}, "priceSpecification": {"@type": "PriceSpecification", "price": "20000", "priceCurrency": "INR"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "AI Automation"}, "priceSpecification": {"@type": "PriceSpecification", "price": "4000", "priceCurrency": "INR"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Website Maintenance"}, "priceSpecification": {"@type": "PriceSpecification", "price": "8000", "priceCurrency": "INR"}}
+    ]
+  }
+}

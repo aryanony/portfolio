@@ -1,0 +1,86 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://aaaryangupta.com/#person",
+  "name": "Aaryan Gupta",
+  "givenName": "Aaryan",
+  "familyName": "Gupta",
+  "alternateName": ["aryanony", "Aryan Raj"],
+  "jobTitle": "Technical Project Manager",
+  "description": "Aaryan Gupta is a freelance Technical Project Manager based in Jaipur, India, specializing in health-tech digital transformation, SaaS project coordination, and AI-powered product delivery. MCA graduate (AKTU, 2025) with developer background, managing projects across 70+ international markets.",
+  "url": "https://aaaryangupta.com",
+  "email": "aryanrajk63@gmail.com",
+  "telephone": "+916205650368",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://aaaryangupta.com/assets/images/profile/aaryan-gupta-tpm.webp",
+    "width": 800,
+    "height": 800
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Jaipur",
+    "addressRegion": "Rajasthan",
+    "addressCountry": "IN",
+    "postalCode": "302001"
+  },
+  "sameAs": [
+    "https://linkedin.com/in/aryanony/",
+    "https://github.com/aryanony",
+    "https://x.com/aryanony/",
+    "https://instagram.com/aryanony/",
+    "https://aryanony.github.io/portfolio"
+  ],
+  "areaServed": [
+    {"@type": "City", "name": "Jaipur"},
+    {"@type": "City", "name": "Ahmedabad"},
+    {"@type": "Country", "name": "India"},
+    {"@type": "AdministrativeArea", "name": "Global"}
+  ],
+  "knowsAbout": [
+    "Technical Project Management",
+    "Health-Tech Digital Transformation",
+    "SaaS Project Coordination",
+    "Agile Methodology",
+    "Scrum",
+    "AI Integration",
+    "React.js",
+    "Node.js",
+    "REST APIs",
+    "Firebase",
+    "DevOps",
+    "Prompt Engineering",
+    "Clinical Workflow Management",
+    "EMR Software",
+    "Telemedicine App Development"
+  ],
+  "alumniOf": [
+    {
+      "@type": "EducationalOrganization",
+      "name": "Lloyd Institute of Engineering & Technology",
+      "sameAs": "https://www.liet.in"
+    },
+    {
+      "@type": "EducationalOrganization",
+      "name": "Munger University"
+    }
+  ],
+  "hasCredential": [
+    {"@type": "EducationalOccupationalCredential", "name": "Master of Computer Applications (MCA)", "credentialCategory": "degree"},
+    {"@type": "EducationalOccupationalCredential", "name": "Virtual Internship — Web & Mobile Development", "recognizedBy": {"@type": "Organization", "name": "IBM"}},
+    {"@type": "EducationalOccupationalCredential", "name": "Digital Application Fundamentals STEM", "recognizedBy": {"@type": "Organization", "name": "nasscom"}}
+  ],
+  "hasOccupation": {
+    "@type": "Occupation",
+    "name": "Technical Project Manager",
+    "occupationLocation": [
+      {"@type": "City", "name": "Jaipur"},
+      {"@type": "City", "name": "Ahmedabad"}
+    ],
+    "skills": "Technical Project Management, Agile, Scrum, Health-Tech, SaaS, AI Integration"
+  },
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Oblinex Pvt. Ltd."
+  }
+}

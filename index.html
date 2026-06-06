@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- PRELOAD CRITICAL RESOURCES -->
+  <link rel="preload" href="/assets/fonts/Syne-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/DMSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
+  <!-- PREVENT FOUC: set theme before paint -->
+  <script>
+    (function(){
+      var t = localStorage.getItem('portfolio-theme') ||
+              (window.matchMedia('(prefers-color-scheme:light)').matches ? 'light' : 'dark');
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+
+  <!-- CRITICAL CSS INLINE -->
+  <style>
+/* ─── CRITICAL CSS: Variables & Resets ─── */
+:root{
+  --font-display:'Syne',system-ui,sans-serif;
+  --font-body:'DM Sans',system-ui,sans-serif;
+  --font-mono:'DM Mono','Fira Code',monospace;
+  --text-xs:.64rem;--text-sm:.75rem;--text-base:.875rem;--text-md:1rem;
+  --text-lg:1.125rem;--text-xl:1.25rem;--text-2xl:1.563rem;--text-3xl:1.953rem;
+  --text-4xl:2.441rem;--text-5xl:3.052rem;--text-6xl:3.815rem;--text-7xl:4.768rem;
+  --weight-light:300;--weight-regular:400;--weight-medium:500;
+  --weight-semibold:600;--weight-bold:700;--weight-extrabold:800;
+  --tracking-tight:-0.04em;--tracking-snug:-0.02em;--tracking-normal:0em;
+  --tracking-wide:0.04em;--tracking-wider:0.1em;--tracking-widest:0.2em;
+  --leading-tight:1.05;--leading-snug:1.25;--leading-normal:1.5;
+  --leading-relaxed:1.7;--leading-loose:1.9;
+  --space-1:.25rem;--space-2:.5rem;--space-3:.75rem;--space-4:1rem;
+  --space-5:1.25rem;--space-6:1.5rem;--space-8:2rem;--space-10:2.5rem;
+  --space-12:3rem;--space-16:4rem;--space-20:5rem;--space-24:6rem;--space-32:8rem;
+  --container-max:1200px;--container-pad:clamp(1.25rem,4vw,2.5rem);
+  --radius-sm:4px;--radius-md:8px;--radius-lg:12px;--radius-xl:16px;--radius-2xl:20px;
+  --section-pad:clamp(64px,8vw,120px) 0;
+  --ease-out:cubic-bezier(0,0,.2,1);--ease-in:cubic-bezier(.4,0,1,1);
+  --ease-inout:cubic-bezier(.4,0,.2,1);--ease-spring:cubic-bezier(.34,1.56,.64,1);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font-body);font-size:var(--text-md);color:var(--text-primary);
+  background-color:var(--bg-void);line-height:var(--leading-normal);
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+  overflow-x:hidden;transition:background-color .3s ease,color .3s ease}
+h1,h2,h3,h4,h5,h6{font-family:var(--font-display);font-weight:var(--weight-extrabold);
+  line-height:var(--leading-tight);color:var(--text-bright);letter-spacing:var(--tracking-tight)}
+a{color:inherit;text-decoration:none}
+ul,ol{list-style:none}
+img{max-width:100%;height:auto;display:block}
+.container{max-width:var(--container-max);margin:0 auto;padding:0 var(--container-pad)}
+.section{padding:var(--section-pad)}
+  </style>
+
+  <!-- TITLE + META SEO -->
+  <title>Aaryan Gupta — Technical Project Manager | HealthTech &amp; SaaS | Jaipur</title>
+  <meta name="description" content="Aaryan Gupta is a freelance Technical Project Manager specializing in Health-Tech digital transformation, SaaS project coordination, and AI automation. Managing projects across 70+ international markets. Based in Jaipur, India.">
+  <meta name="keywords" content="Technical Project Manager India, HealthTech Project Manager Jaipur, IT Project Manager Ahmedabad, Freelance Technical PM, SaaS Project Coordinator, Aaryan Gupta, aryanony">
+  <meta name="author" content="Aaryan Gupta">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://aaaryangupta.com/">
+
+  <!-- GEO TARGETING -->
+  <meta name="geo.region" content="IN-RJ">
+  <meta name="geo.placename" content="Jaipur, Rajasthan, India">
+  <meta name="geo.position" content="26.9124;75.7873">
+  <meta name="ICBM" content="26.9124, 75.7873">
+
+  <!-- OPEN GRAPH -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aaaryangupta.com/">
+  <meta property="og:site_name" content="Aaryan Gupta — Technical Project Manager">
+  <meta property="og:title" content="Aaryan Gupta — Technical Project Manager | HealthTech &amp; SaaS | Jaipur">
+  <meta property="og:description" content="Freelance Technical PM · HealthTech Specialist · AI Automation · 70+ markets delivered. Book a free 30-min strategy call.">
+  <meta property="og:image" content="https://aaaryangupta.com/assets/images/og/og-default.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_IN">
+
+  <!-- TWITTER CARD -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@aryanony">
+  <meta name="twitter:creator" content="@aryanony">
+  <meta name="twitter:title" content="Aaryan Gupta — Technical Project Manager | HealthTech">
+  <meta name="twitter:description" content="Freelance Technical PM · HealthTech · AI Automation · 70+ markets. Book a free call.">
+  <meta name="twitter:image" content="https://aaaryangupta.com/assets/images/og/og-default.png">
+
+  <!-- HREFLANG -->
+  <link rel="alternate" hreflang="en" href="https://aaaryangupta.com/">
+  <link rel="alternate" hreflang="en-IN" href="https://aaaryangupta.com/">
+  <link rel="alternate" hreflang="x-default" href="https://aaaryangupta.com/">
+
+  <!-- FAVICONS -->
+  <link rel="icon" href="/assets/images/icons/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/seo/manifest.json">
+  <meta name="theme-color" content="#00C896" media="(prefers-color-scheme:dark)">
+  <meta name="theme-color" content="#006B52" media="(prefers-color-scheme:light)">
+
+  <!-- SCHEMA JSON-LD -->
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","@id":"https://aaaryangupta.com/#person","name":"Aaryan Gupta","jobTitle":"Technical Project Manager","description":"Aaryan Gupta is a freelance Technical Project Manager based in Jaipur, India, specializing in health-tech digital transformation, SaaS project coordination, and AI-powered product delivery.","url":"https://aaaryangupta.com","email":"aryanrajk63@gmail.com","telephone":"+916205650368","address":{"@type":"PostalAddress","addressLocality":"Jaipur","addressRegion":"Rajasthan","addressCountry":"IN"},"sameAs":["https://linkedin.com/in/aryanony/","https://github.com/aryanony","https://x.com/aryanony/","https://instagram.com/aryanony/"],"knowsAbout":["Technical Project Management","Health-Tech","SaaS","Agile","Scrum","AI Integration","React.js","Node.js"]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","@id":"https://aaaryangupta.com/#faqpage","mainEntity":[{"@type":"Question","name":"Who is Aaryan Gupta?","acceptedAnswer":{"@type":"Answer","text":"Aaryan Gupta is a Technical Project Manager based in Jaipur, India, specializing in health-tech digital transformation and SaaS project coordination. MCA graduate (AKTU, 2025) managing 20+ projects across 70+ global markets."}},{"@type":"Question","name":"Does Aaryan Gupta work with doctors and clinics?","acceptedAnswer":{"@type":"Answer","text":"Yes — health-tech is a primary specialization. Aaryan helps doctors, clinic owners, and hospital administrators digitize clinical workflows, build patient management systems, and coordinate healthcare app development. Serving Jaipur, Ahmedabad, and pan-India."}}]}</script>
+
+  <!-- NON-CRITICAL CSS -->
+  <link rel="stylesheet" href="/assets/css/dark.css">
+  <link rel="stylesheet" href="/assets/css/light.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/animations.css">
+</head>
+
+<body class="loading">
+
+  <!-- SVG ICONS SPRITE -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+    <symbol id="ico-briefcase" viewBox="0 0 256 256"><path fill="currentColor" d="M216,72H176V56a24,24,0,0,0-24-24H104A24,24,0,0,0,80,56V72H40A16,16,0,0,0,24,88V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V88A16,16,0,0,0,216,72ZM96,56a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8V72H96Z"/></symbol>
+    <symbol id="ico-heartbeat" viewBox="0 0 256 256"><path fill="currentColor" d="M240,94c0,70-104,122.61-108.91,125a8,8,0,0,1-6.18,0C120,216.61,16,164,16,94A54,54,0,0,1,70,40c22.56,0,41.48,12.72,58,28.66C144.52,52.72,163.44,40,186,40A54,54,0,0,1,240,94Z"/></symbol>
+    <symbol id="ico-robot" viewBox="0 0 256 256"><path fill="currentColor" d="M216,88H200V80a24,24,0,0,0-24-24H144V40a16,16,0,0,0-32,0V56H80A24,24,0,0,0,56,80v8H40a16,16,0,0,0-16,16v32a16,16,0,0,0,16,16H56v48a24,24,0,0,0,24,24H176a24,24,0,0,0,24-24V152h16a16,16,0,0,0,16-16V104A16,16,0,0,0,216,88ZM84,116a12,12,0,1,1,12,12A12,12,0,0,1,84,116Zm88,0a12,12,0,1,1-12-12A12,12,0,0,1,172,116Zm0,44H84a8,8,0,0,1,0-16h88a8,8,0,0,1,0,16Z"/></symbol>
+    <symbol id="ico-wrench" viewBox="0 0 256 256"><path fill="currentColor" d="M226.76,69a8,8,0,0,0-12.84-2.88l-40.3,37.26-17.23-4.61-4.61-17.24,37.25-40.29A8,8,0,0,0,186.2,29.29,72,72,0,0,0,82,112a72.34,72.34,0,0,0,1.22,13.22L33.39,164.5a24,24,0,0,0,33.95,33.94l39.28-49.83A72,72,0,0,0,226.76,69Z"/></symbol>
+    <symbol id="ico-blueprint" viewBox="0 0 256 256"><path fill="currentColor" d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,160H40V56H216V200Zm-96-24V136H96a8,8,0,0,1,0-16h24V96a8,8,0,0,1,16,0v24h24a8,8,0,0,1,0,16H136v40a8,8,0,0,1-16,0Z"/></symbol>
+    <symbol id="ico-arrow-right" viewBox="0 0 256 256"><path fill="currentColor" d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></symbol>
+    <symbol id="ico-check" viewBox="0 0 256 256"><path fill="currentColor" d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></symbol>
+    <symbol id="ico-globe" viewBox="0 0 256 256"><path fill="currentColor" d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm88,104a87.63,87.63,0,0,1-2.89,22.39L198,140.73A8,8,0,0,0,192,136H176a8,8,0,0,0-8,8v24a8,8,0,0,1-8,8H152a8,8,0,0,0-8,8v12.72A88.18,88.18,0,0,1,128,216a87.56,87.56,0,0,1-37.09-8.19l24.1-24.1A8,8,0,0,0,120,176v-16a8,8,0,0,0-8-8H96a8,8,0,0,1-8-8v-16a8,8,0,0,0-8-8H60a8,8,0,0,0-8,8v20.55A88.37,88.37,0,0,1,40,128,88.12,88.12,0,0,1,216,128Z"/></symbol>
+    <symbol id="ico-linkedin" viewBox="0 0 256 256"><path fill="currentColor" d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24ZM96,176H72V104H96Zm-12-84A16,16,0,1,1,100,76,16,16,0,0,1,84,92ZM184,176H160V140c0-12.2-5.1-20-15.3-20-7.5,0-11.7,5-13.7,10V176H108V104h22v10h.3c2.8-4.7,10.3-12,22.4-12,21.6,0,31.3,14.4,31.3,36Z"/></symbol>
+    <symbol id="ico-github" viewBox="0 0 256 256"><path fill="currentColor" d="M208.3,75.7A127.4,127.4,0,0,0,128,48a127.4,127.4,0,0,0-80.3,27.7C20.6,98.4,8,127.9,8,160c0,46.7,28.8,87.6,72,102.6a16,16,0,0,0,19.7-11.5V240a8,8,0,0,0,8-8V213.3A47.7,47.7,0,0,0,128,216a47.7,47.7,0,0,0,20.3-2.7V232a8,8,0,0,0,8,8v11.1A16,16,0,0,0,176,262.6C219.2,247.6,248,206.7,248,160,248,127.9,235.4,98.4,208.3,75.7Z"/></symbol>
+    <symbol id="ico-twitter" viewBox="0 0 256 256"><path fill="currentColor" d="M214.75,211.1l-62.6-98.36,61.77-67.95a8,8,0,0,0-11.84-10.76l-58.4,64.24-47.56-74.72A8,8,0,0,0,89.47,20H48a8,8,0,0,0-6.75,12.25l62.6,98.35L41.08,198.55a8,8,0,1,0,11.84,10.76l58.4-64.24,47.56,74.73A8,8,0,0,0,166.53,224H208a8,8,0,0,0,6.22-13.1Z"/></symbol>
+    <symbol id="ico-instagram" viewBox="0 0 256 256"><path fill="currentColor" d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"/></symbol>
+    <symbol id="ico-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></symbol>
+    <symbol id="ico-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></symbol>
+    <symbol id="ico-phone" viewBox="0 0 256 256"><path fill="currentColor" d="M221.8,175.9l-47.9-21.6a15.9,15.9,0,0,0-15.8,1.3l-25.5,17a76.5,76.5,0,0,1-33-32.9l17.1-25.7a16,16,0,0,0,1.2-15.8L96.1,50.2A16,16,0,0,0,79.4,41H40A16,16,0,0,0,24,57.7C26.7,139.5,116.4,229.3,198.3,232a16,16,0,0,0,16.7-16V191.1A16,16,0,0,0,221.8,175.9Z"/></symbol>
+    <symbol id="ico-envelope" viewBox="0 0 256 256"><path fill="currentColor" d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM112.73,128,48,88.57V80l80,48.71L208,80v8.57Z"/></symbol>
+    <symbol id="ico-whatsapp" viewBox="0 0 256 256"><path fill="currentColor" d="M187.6,153.6c-4-2-23.4-11.5-27-12.8s-6.3-2-8.9.6-10.2,12.8-12.5,15.4-4.6,2-8.6.1-16.4-6.6-31.3-19.7c-11.5-10.5-19.3-23.5-21.6-27.5s-.3-6.1,1.7-8.1,4.4-4.6,6.6-6.9,2.9-4,4.3-6.7.7-5-.3-7S87.3,72.7,84,65.3s-7.3-14.3-8.6-15.3a15.9,15.9,0,0,0-10-4h-8c-2.8,0-7,.4-10.5,4s-14,13.6-14,33.2,14.3,38.5,16.3,41.2S80.2,163.2,119,175.7s36.7,8.2,43.3,7.7,21.5-8.8,24.5-17.4,3-16,2-18.2S191.6,155.6,187.6,153.6ZM128,220A92,92,0,0,1,49.5,79.9L32,32,83.5,49.6A92,92,0,1,1,128,220Z"/></symbol>
+    <symbol id="ico-calendar" viewBox="0 0 256 256"><path fill="currentColor" d="M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32Zm0,176H48V48H72v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24Z"/></symbol>
+    <symbol id="ico-download" viewBox="0 0 256 256"><path fill="currentColor" d="M224,152v56a16,16,0,0,1-16,16H48a16,16,0,0,1-16-16V152a8,8,0,0,1,16,0v56H208V152a8,8,0,0,1,16,0Zm-101.7,5.7a8.2,8.2,0,0,0,11.4,0l40-40a8.1,8.1,0,0,0-11.4-11.4L136,132.7V40a8,8,0,0,0-16,0v92.7L93.7,106.3A8.1,8.1,0,0,0,82.3,117.7Z"/></symbol>
+  </svg>
+
+  <!-- PAGE LOADER -->
+  <div id="ldr" class="loader" role="status" aria-label="Loading">
+    <div class="loader-content">
+      <div class="loader-wordmark">AG.</div>
+      <div class="loader-progress-bar"><div class="loader-progress" id="loader-bar"></div></div>
+      <div class="loader-label">INITIALIZING</div>
+    </div>
+  </div>
+
+  <!-- CUSTOM CURSOR (desktop only) -->
+  <div class="cx" aria-hidden="true"></div>
+  <div class="ci" aria-hidden="true"></div>
+
+  <!-- SCROLL PROGRESS -->
+  <div id="scroll-progress" style="position:fixed;top:0;left:0;z-index:9997;height:2px;width:0%;background:linear-gradient(90deg,var(--neon-primary),var(--neon-cyan),var(--neon-blue));transition:width .1s linear;box-shadow:0 0 8px var(--neon-primary);" aria-hidden="true"></div>
+
+  <!-- ─── NAV ─── -->
+  <header class="nav-header" id="nav-header">
+    <div class="container nav-container">
+      <a href="/" class="nav-logo" aria-label="Aaryan Gupta — Home">AG.</a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="theme-toggle" aria-label="Toggle theme">
+          <svg width="20" height="20" aria-hidden="true"><use href="#ico-moon"/></svg>
+        </button>
+        <a href="#contact" class="btn btn-primary btn-sm magnetic">Book a Call</a>
+        <button class="hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#services" class="mobile-link">Services</a>
+      <a href="#work" class="mobile-link">Work</a>
+      <a href="#experience" class="mobile-link">Experience</a>
+      <a href="#faq" class="mobile-link">FAQ</a>
+      <a href="#contact" class="btn btn-primary" style="margin-top:1rem">Book a Call</a>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ─── HERO ─── -->
+    <section id="hero" class="hero">
+      <div class="hero-bg-grid" aria-hidden="true"></div>
+      <div class="hero-orbs" aria-hidden="true">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+      </div>
+      <canvas id="hero-particles" aria-hidden="true"></canvas>
+
+      <div class="container hero-container">
+        <div class="badge-row">
+          <span class="pulse-dot" aria-hidden="true"></span>
+          Available for Projects · Jaipur, Ahmedabad &amp; Remote
+        </div>
+
+        <h1 class="hero-title">
+          Technical Project Manager for<br>
+          <span class="text-accent" id="typewriter">Health-Tech &amp; SaaS Teams</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          I bridge complex technology with seamless execution — so clinics, startups and product teams ship faster, smarter and at scale.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary btn-lg magnetic">Book a Free 30-Min Call</a>
+          <a href="#work" class="btn btn-ghost btn-lg">
+            See My Work
+            <svg width="18" height="18" aria-hidden="true" style="margin-left:6px"><use href="#ico-arrow-right"/></svg>
+          </a>
+        </div>
+
+        <div class="proof-bar">
+          <div class="proof-item">
+            <strong data-counter="70" data-suffix="+">70+</strong>
+            <span>Markets Delivered</span>
+          </div>
+          <div class="proof-item">
+            <strong data-counter="20" data-suffix="+">20+</strong>
+            <span>Projects Managed</span>
+          </div>
+          <div class="proof-item">
+            <strong>Health-Tech</strong>
+            <span>Primary Specialization</span>
+          </div>
+          <div class="proof-item">
+            <strong>Jaipur</strong>
+            <span>Priority Market</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── MARQUEE ─── -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-content">
+        <span>Technical Project Management</span><span class="dot">•</span>
+        <span>Health-Tech Consulting</span><span class="dot">•</span>
+        <span>AI Automation</span><span class="dot">•</span>
+        <span>SaaS Project Coordination</span><span class="dot">•</span>
+        <span>Sprint Governance</span><span class="dot">•</span>
+        <span>Agile Delivery</span><span class="dot">•</span>
+        <span>Jaipur &amp; Ahmedabad</span><span class="dot">•</span>
+      </div>
+      <div class="marquee-content" aria-hidden="true">
+        <span>Technical Project Management</span><span class="dot">•</span>
+        <span>Health-Tech Consulting</span><span class="dot">•</span>
+        <span>AI Automation</span><span class="dot">•</span>
+        <span>SaaS Project Coordination</span><span class="dot">•</span>
+        <span>Sprint Governance</span><span class="dot">•</span>
+        <span>Agile Delivery</span><span class="dot">•</span>
+        <span>Jaipur &amp; Ahmedabad</span><span class="dot">•</span>
+      </div>
+    </div>
+
+    <!-- ─── ABOUT ─── -->
+    <section id="about" class="section">
+      <div class="container about-grid">
+        <div class="about-image-wrapper">
+          <!-- Photo placeholder — replace with real photo -->
+          <div class="photo-placeholder" aria-label="Aaryan Gupta — Technical Project Manager">
+            <svg width="80" height="80" viewBox="0 0 256 256" fill="currentColor" style="color:var(--neon-primary);opacity:.3"><path d="M230.9,212a127.9,127.9,0,1,0-205.8,0A8,8,0,0,0,32,216H224A8,8,0,0,0,230.9,212ZM128,52a76,76,0,1,1-76,76A76.09,76.09,0,0,1,128,52Z"/></svg>
+            <p style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--text-muted);letter-spacing:.1em;text-transform:uppercase;margin-top:1rem">Add Photo Here</p>
+          </div>
+        </div>
+        <div class="about-content">
+          <h2>Bridging the gap between engineering and business.</h2>
+          <p>I'm Aaryan Gupta — a Technical Project Manager with an MCA from AKTU (2025) and a software engineering background in React, Node.js, and full-stack delivery. I transitioned into project management to solve the real bottleneck: execution.</p>
+          <p>Currently managing end-to-end project delivery at <strong>Oblinex Pvt. Ltd.</strong> across <strong>70+ international markets</strong> — owning client onboarding, server infrastructure setup, sprint governance, QA validation, and Play Store / App Store releases.</p>
+          <div class="skill-chips">
+            <span class="chip">Agile</span><span class="chip">Scrum</span>
+            <span class="chip">Health-Tech</span><span class="chip">SaaS</span>
+            <span class="chip">React.js</span><span class="chip">Node.js</span>
+            <span class="chip">AI Automation</span><span class="chip">DevOps</span>
+          </div>
+          <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:2rem">
+            <a href="https://linkedin.com/in/aryanony/" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">
+              <svg width="16" height="16" aria-hidden="true"><use href="#ico-linkedin"/></svg> LinkedIn
+            </a>
+            <a href="https://github.com/aryanony" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">
+              <svg width="16" height="16" aria-hidden="true"><use href="#ico-github"/></svg> GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── WHY ME ─── -->
+    <section id="why" class="section" style="background:var(--bg-surface)">
+      <div class="container">
+        <div class="section-header">
+          <h2>Why Developer-Turned-PMs Deliver Faster</h2>
+          <p>When your PM understands the codebase, every conversation changes.</p>
+        </div>
+
+        <div class="pain-points-slider">
+          <div class="pain-card">
+            <p><strong>Failure Point 1:</strong> Your developer and client speak different languages → missed deadlines and costly rework.</p>
+          </div>
+          <div class="pain-card">
+            <p><strong>Failure Point 2:</strong> Managing tech without technical fluency → you can't challenge bad estimates or spot scope creep.</p>
+          </div>
+          <div class="pain-card">
+            <p><strong>Failure Point 3:</strong> No structured delivery process → features pile up, budget overruns, nobody owns the outcome.</p>
+          </div>
+        </div>
+
+        <div class="why-grid" style="margin-top:3rem">
+          <div class="tilt-card why-card">
+            <div class="why-num">01</div>
+            <h3>Technical Fluency</h3>
+            <p>React/Node expertise means I challenge estimates, read PRs, and understand the codebase — not just the timeline.</p>
+          </div>
+          <div class="tilt-card why-card">
+            <div class="why-num">02</div>
+            <h3>PM Discipline</h3>
+            <p>Agile sprints, QA governance, release management. I spot feature creep before it costs you weeks of rework.</p>
+          </div>
+          <div class="tilt-card why-card">
+            <div class="why-num">03</div>
+            <h3>Health-Tech Specialization</h3>
+            <p>Deep domain knowledge in clinical workflows, EMR, and SaaS product cycles. I build for how doctors actually work.</p>
+          </div>
+          <div class="tilt-card why-card">
+            <div class="why-num">04</div>
+            <h3>Outcome-Oriented</h3>
+            <p>70+ markets delivered. Results first. I align every technical decision with your revenue and business goals.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── SERVICES ─── -->
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>What I Deliver</h2>
+          <p>Four high-impact offerings. One common thread: on-time, on-scope, no technical chaos.</p>
+        </div>
+        <div class="services-grid" id="services-container">
+          <!-- Populated by services.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── WORK ─── -->
+    <section id="work" class="section" style="background:var(--bg-surface)">
+      <div class="container">
+        <div class="section-header">
+          <h2>Signature Projects</h2>
+          <p>Built end-to-end. Live. Owned completely.</p>
+        </div>
+        <div class="work-grid" id="work-container">
+          <!-- Populated by work.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── EXPERIENCE ─── -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Experience</h2>
+        </div>
+        <div class="experience-layout">
+          <div class="timeline" role="tablist" id="timeline-list"></div>
+          <div class="timeline-detail card" role="tabpanel" id="timeline-detail"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── SKILLS ─── -->
+    <section id="skills" class="section" style="background:var(--bg-surface)">
+      <div class="container">
+        <div class="section-header">
+          <h2>Technical Proficiency</h2>
+        </div>
+        <div id="skills-grid" class="skills-categories"></div>
+      </div>
+    </section>
+
+    <!-- ─── INDUSTRIES / HEALTHTECH ─── -->
+    <section id="industries" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Built for Indian Healthcare</h2>
+          <p>600,000+ registered doctors. Fewer than 10% use digital practice management. That gap is the opportunity.</p>
+        </div>
+        <div class="industries-feature">
+          <div class="ind-stat-grid">
+            <div class="tilt-card ind-stat-card">
+              <div class="ind-big">600K+</div>
+              <div class="ind-label">Doctors in India</div>
+            </div>
+            <div class="tilt-card ind-stat-card">
+              <div class="ind-big">&lt;10%</div>
+              <div class="ind-label">Digital Adoption</div>
+            </div>
+            <div class="tilt-card ind-stat-card">
+              <div class="ind-big">₹0</div>
+              <div class="ind-label">Monthly Fees (One-Time)</div>
+            </div>
+            <div class="tilt-card ind-stat-card">
+              <div class="ind-big">48hr</div>
+              <div class="ind-label">Avg. Setup Time</div>
+            </div>
+          </div>
+          <div class="ind-products">
+            <h3 style="margin-bottom:1.5rem;color:var(--neon-primary)">Ready-Made Clinic Software</h3>
+            <div class="product-list">
+              <div class="product-row"><span class="prod-dot"></span><strong>TokenQ</strong> — OPD Patient Queue System</div>
+              <div class="product-row"><span class="prod-dot"></span><strong>RxPad Pro</strong> — Digital Prescription Generator</div>
+              <div class="product-row"><span class="prod-dot"></span><strong>LabTrack Pro</strong> — Diagnostic Lab Management</div>
+              <div class="product-row"><span class="prod-dot"></span><strong>RecallMD</strong> — Patient Follow-Up Automation</div>
+              <div class="product-row"><span class="prod-dot"></span><strong>CareReview</strong> — Online Reputation Management</div>
+            </div>
+            <a href="#contact" class="btn btn-primary" style="margin-top:2rem">
+              <svg width="16" height="16" aria-hidden="true"><use href="#ico-phone"/></svg>
+              Talk About Your Clinic
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── PROCESS ─── -->
+    <section id="process" class="section" style="background:var(--bg-surface)">
+      <div class="container">
+        <div class="section-header">
+          <h2>How Every Engagement Runs</h2>
+          <p>No ambiguity. No surprises. Delivery by design.</p>
+        </div>
+        <div class="process-steps">
+          <div class="tilt-card process-card">
+            <div class="process-num">01</div>
+            <h3>Discovery Call</h3>
+            <p>Free 30-min strategy session. Scope requirements, define success metrics, assess technical fit — no pitch.</p>
+          </div>
+          <div class="tilt-card process-card">
+            <div class="process-num">02</div>
+            <h3>Requirement Lock</h3>
+            <p>Written requirements doc. Tech stack confirmation. Access setup. Communication channel agreed. Milestone payment schedule.</p>
+          </div>
+          <div class="tilt-card process-card">
+            <div class="process-num">03</div>
+            <h3>Sprint Execution</h3>
+            <p>Agile sprints. Daily standups. Blocker resolution. Progress visibility without micromanaging a developer team.</p>
+          </div>
+          <div class="tilt-card process-card">
+            <div class="process-num">04</div>
+            <h3>QA &amp; Release</h3>
+            <p>Multi-device QA validation. Client acceptance testing. Structured deployment — zero "works on my machine" surprises.</p>
+          </div>
+          <div class="tilt-card process-card">
+            <div class="process-num">05</div>
+            <h3>Handoff &amp; Support</h3>
+            <p>Complete documentation. Knowledge transfer. Optional maintenance retainer from ₹2,000/month.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── FAQ ─── -->
+    <section id="faq" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-accordion" id="faq-container"></div>
+      </div>
+    </section>
+
+    <!-- ─── CTA ─── -->
+    <section id="cta" class="section cta-section">
+      <div class="container cta-container">
+        <h2>Ready to ship without the chaos?</h2>
+        <p>Book a free 30-minute consultation. Scope your project. Get clarity — no pitch, no pressure.</p>
+        <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+          <a href="#contact" class="btn btn-primary btn-lg magnetic">
+            <svg width="18" height="18" aria-hidden="true"><use href="#ico-calendar"/></svg>
+            Book Free 30-Min Call
+          </a>
+          <a href="https://wa.me/916205650368?text=Hi%20Aaryan%2C%20I%27d%20like%20to%20discuss%20a%20project" target="_blank" rel="noopener" class="btn btn-ghost btn-lg">
+            <svg width="18" height="18" aria-hidden="true"><use href="#ico-whatsapp"/></svg>
+            WhatsApp Me
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── CONTACT ─── -->
+    <section id="contact" class="section" style="background:var(--bg-surface)">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <h2>Let's Build Together</h2>
+          <p style="color:var(--text-secondary);margin-bottom:2rem;line-height:1.7">
+            Whether you're a doctor in Jaipur thinking about digitizing your clinic, a founder who needs a technical PM, or a startup scaling across markets — let's talk.
+          </p>
+          <div class="contact-detail">
+            <svg width="18" height="18" aria-hidden="true"><use href="#ico-envelope"/></svg>
+            <a href="mailto:aryanrajk63@gmail.com">aryanrajk63@gmail.com</a>
+          </div>
+          <div class="contact-detail">
+            <svg width="18" height="18" aria-hidden="true"><use href="#ico-phone"/></svg>
+            <a href="tel:+916205650368">+91 62056 50368</a>
+          </div>
+          <div class="contact-detail">
+            <svg width="18" height="18" aria-hidden="true"><use href="#ico-globe"/></svg>
+            <span>Jaipur, Ahmedabad &amp; Remote Worldwide</span>
+          </div>
+          <div class="contact-socials" style="margin-top:2rem;display:flex;gap:.75rem">
+            <a href="https://linkedin.com/in/aryanony/" target="_blank" rel="noopener" class="social-btn" aria-label="LinkedIn">
+              <svg width="18" height="18"><use href="#ico-linkedin"/></svg>
+            </a>
+            <a href="https://github.com/aryanony" target="_blank" rel="noopener" class="social-btn" aria-label="GitHub">
+              <svg width="18" height="18"><use href="#ico-github"/></svg>
+            </a>
+            <a href="https://x.com/aryanony/" target="_blank" rel="noopener" class="social-btn" aria-label="Twitter">
+              <svg width="18" height="18"><use href="#ico-twitter"/></svg>
+            </a>
+            <a href="https://instagram.com/aryanony/" target="_blank" rel="noopener" class="social-btn" aria-label="Instagram">
+              <svg width="18" height="18"><use href="#ico-instagram"/></svg>
+            </a>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-group">
+            <input type="text" name="name" placeholder="Your Name" required autocomplete="name">
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" placeholder="Email Address" required autocomplete="email">
+          </div>
+          <div class="form-group">
+            <select name="service">
+              <option value="" disabled selected>What can I help with?</option>
+              <option value="tpm">Technical Project Management</option>
+              <option value="healthtech">Health-Tech Consulting</option>
+              <option value="ai">AI Automation</option>
+              <option value="saas">SaaS Project Coordination</option>
+              <option value="maintenance">Website Maintenance</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <textarea name="message" placeholder="Brief description of your project or question..." rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary magnetic" id="form-submit">
+            Send Message
+            <svg width="16" height="16" aria-hidden="true"><use href="#ico-arrow-right"/></svg>
+          </button>
+          <p class="form-note">Usually replies within 4 hours on working days.</p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <div class="footer-logo">AG.</div>
+        <p style="color:var(--text-muted);font-size:var(--text-sm);line-height:1.7;margin-bottom:1.5rem;max-width:28ch">
+          Technical Project Manager for HealthTech &amp; SaaS. Jaipur, India.
+        </p>
+        <div style="display:flex;gap:.75rem">
+          <a href="https://linkedin.com/in/aryanony/" target="_blank" rel="noopener" class="social-btn" aria-label="LinkedIn"><svg width="16" height="16"><use href="#ico-linkedin"/></svg></a>
+          <a href="https://github.com/aryanony" target="_blank" rel="noopener" class="social-btn" aria-label="GitHub"><svg width="16" height="16"><use href="#ico-github"/></svg></a>
+          <a href="https://x.com/aryanony/" target="_blank" rel="noopener" class="social-btn" aria-label="Twitter"><svg width="16" height="16"><use href="#ico-twitter"/></svg></a>
+          <a href="https://instagram.com/aryanony/" target="_blank" rel="noopener" class="social-btn" aria-label="Instagram"><svg width="16" height="16"><use href="#ico-instagram"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="#services">Technical PM</a>
+        <a href="#services">HealthTech Consulting</a>
+        <a href="#services">AI Automation</a>
+        <a href="#services">Website Maintenance</a>
+      </div>
+      <div class="footer-col">
+        <h4>Projects</h4>
+        <a href="https://projectsport.vercel.app/" target="_blank" rel="noopener">ProjectPort</a>
+        <a href="https://uibrium.vercel.app/" target="_blank" rel="noopener">UiBrium</a>
+        <a href="https://aryanony.github.io/portfolio" target="_blank" rel="noopener">Portfolio</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="mailto:aryanrajk63@gmail.com">aryanrajk63@gmail.com</a>
+        <a href="tel:+916205650368">+91 62056 50368</a>
+        <a href="https://wa.me/916205650368" target="_blank" rel="noopener">WhatsApp</a>
+        <p style="color:var(--text-muted);font-size:var(--text-xs);margin-top:1.5rem">
+          &copy; <span id="footer-year">2025</span> Aaryan Gupta.<br>All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- COOKIE BANNER -->
+  <div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="Cookie notice" style="display:none">
+    <p>This site uses analytics cookies to improve your experience.</p>
+    <div class="cookie-actions">
+      <button id="cookie-accept" class="btn btn-primary btn-sm">Accept</button>
+      <button id="cookie-decline" class="btn btn-ghost btn-sm">Decline</button>
+    </div>
+  </div>
+
+  <!-- SCRIPTS -->
+  <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+  <script src="/assets/js/config.js" defer></script>
+  <script src="/assets/js/theme.js" defer></script>
+  <script src="/assets/js/loader.js" defer></script>
+  <script src="/assets/js/scroll.js" defer></script>
+  <script src="/assets/js/cursor.js" defer></script>
+  <script src="/assets/js/particles.js" defer></script>
+  <script src="/assets/js/typewriter.js" defer></script>
+  <script src="/assets/js/tilt.js" defer></script>
+  <script src="/assets/js/magnetic.js" defer></script>
+  <script src="/assets/js/counter.js" defer></script>
+  <script src="/assets/js/animations.js" defer></script>
+  <script src="/assets/js/services-render.js" defer></script>
+  <script src="/assets/js/work-render.js" defer></script>
+  <script src="/assets/js/timeline.js" defer></script>
+  <script src="/assets/js/skills-render.js" defer></script>
+  <script src="/assets/js/faq.js" defer></script>
+  <script src="/assets/js/form.js" defer></script>
+  <script src="/assets/js/cookies.js" defer></script>
+  <script src="/assets/js/app.js" defer></script>
+</body>
+</html>

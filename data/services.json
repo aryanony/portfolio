@@ -1,0 +1,42 @@
+[
+  {
+    "id": "tpm",
+    "icon": "blueprint",
+    "title": "Technical Project Management",
+    "tagline": "End-to-end delivery coordination. Agile-first. Full lifecycle ownership.",
+    "bullets": ["Sprint planning & backlog management","Cross-functional team leadership","QA validation & release governance","Stakeholder reporting","Play Store & App Store launches"],
+    "pricing_india": "₹25,000/project",
+    "pricing_global": "$500/project",
+    "featured": true
+  },
+  {
+    "id": "healthtech",
+    "icon": "heartbeat",
+    "title": "Health-Tech Consulting",
+    "tagline": "For doctors and clinics who need a PM who understands clinical reality.",
+    "bullets": ["Clinic digitization strategy","Patient management system PM","EMR & telemedicine coordination","Clinical workflow mapping","HealthTech startup advisory"],
+    "pricing_india": "₹20,000/month",
+    "pricing_global": "$400/month",
+    "featured": false
+  },
+  {
+    "id": "ai-saas",
+    "icon": "robot",
+    "title": "AI Automation & Micro-SaaS",
+    "tagline": "Build AI-powered tools once. Deploy for 100+ clients. Client pays infrastructure.",
+    "bullets": ["WhatsApp AI auto-reply bots","AI lead qualification agents","Clinic appointment systems","AI customer support agents","Custom micro-SaaS products"],
+    "pricing_india": "₹4,000 one-time",
+    "pricing_global": "$69 one-time",
+    "featured": false
+  },
+  {
+    "id": "maintenance",
+    "icon": "wrench",
+    "title": "Website Maintenance",
+    "tagline": "Ongoing management for clinics, businesses, and SaaS teams.",
+    "bullets": ["Uptime monitoring & security patches","Performance optimization","Monthly SEO health audits","Content updates (10/month)","Analytics reporting"],
+    "pricing_india": "From ₹8,000/month",
+    "pricing_global": "From $149/month",
+    "featured": false
+  }
+]

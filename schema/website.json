@@ -1,0 +1,17 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://aaaryangupta.com/#website",
+  "url": "https://aaaryangupta.com",
+  "name": "Aaryan Gupta — Technical Project Manager",
+  "description": "Portfolio website of Aaryan Gupta, freelance Technical Project Manager specializing in Health-Tech and SaaS",
+  "author": {"@id": "https://aaaryangupta.com/#person"},
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://aaaryangupta.com/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  },
+  "inLanguage": "en-IN",
+  "copyrightYear": 2026,
+  "copyrightHolder": {"@id": "https://aaaryangupta.com/#person"}
+}

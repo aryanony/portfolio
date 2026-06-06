@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+Disallow: /data/
+Disallow: /schema/
+Disallow: /_headers
+Disallow: /_redirects
+Disallow: /build.js
+Disallow: /netlify.toml
+
+User-agent: GPTBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: anthropic-ai
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+
+Sitemap: https://aaaryangupta.com/seo/sitemap.xml
+Sitemap: https://aaaryangupta.com/seo/sitemap-images.xml

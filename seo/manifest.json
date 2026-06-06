@@ -1,0 +1,13 @@
+{
+  "name": "Aaryan Gupta — Technical Project Manager",
+  "short_name": "Aaryan Gupta",
+  "description": "Freelance Technical PM for HealthTech & SaaS. 70+ markets. Jaipur, India.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#030D0A",
+  "theme_color": "#00C896",
+  "lang": "en-IN",
+  "icons": [
+    { "src": "/assets/images/icons/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

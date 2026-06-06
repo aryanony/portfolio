@@ -1,0 +1,45 @@
+{
+  "site": {
+    "domain": "aaaryangupta.com",
+    "protocol": "https",
+    "url": "https://aaaryangupta.com",
+    "name": "Aaryan Gupta",
+    "tagline": "Technical Project Manager – bridging complex technology with seamless execution for Health-Tech, SaaS & product teams.",
+    "valueProposition": "I help doctors, clinic owners and startups ship software faster – with no technical chaos, no missed deadlines and no scope creep.",
+    "description": "Aaryan Gupta is a freelance Technical Project Manager specializing in Health-Tech digital transformation, SaaS project coordination, and AI automation. I help doctors, clinic owners and startups ship software faster.",
+    "locale": "en_IN",
+    "language": "en",
+    "timezone": "Asia/Kolkata"
+  },
+  "person": {
+    "name": "Aaryan Gupta",
+    "handle": "aryanony",
+    "title": "Technical Project Manager",
+    "email": "aryanrajk63@gmail.com",
+    "phone": "+916205650368",
+    "whatsapp": "916205650368",
+    "location": {
+      "city": "Jaipur",
+      "state": "Rajasthan",
+      "country": "India",
+      "countryCode": "IN",
+      "secondary": "Ahmedabad",
+      "postalCode": "302001"
+    }
+  },
+  "social": {
+    "linkedin": "https://linkedin.com/in/aryanony/",
+    "github": "https://github.com/aryanony",
+    "twitter": "https://x.com/aryanony/",
+    "instagram": "https://instagram.com/aryanony/",
+    "portfolio": "https://aryanony.github.io/portfolio",
+    "projectport": "https://projectsport.vercel.app/",
+    "uibrium": "https://uibrium.vercel.app/"
+  },
+  "meta": {
+    "ogImage": "/assets/og/og-aaryan-gupta-tpm.jpg",
+    "twitterCard": "summary_large_image",
+    "themeColor": "#00C896",
+    "tileColor": "#03100D"
+  }
+}

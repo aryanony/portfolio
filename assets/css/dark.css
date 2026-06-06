@@ -1,0 +1,31 @@
+/* ═══ DARK MODE TOKENS ═══ */
+:root, [data-theme="dark"] {
+  --bg-void:      #030D0A;
+  --bg-deep:      #050F0C;
+  --bg-surface:   #081510;
+  --bg-card:      #0C1E15;
+  --bg-card-hi:   #0F2519;
+  --bg-input:     #0A1C12;
+  --neon-primary: #00C896;
+  --neon-cyan:    #00D4E8;
+  --neon-blue:    #1A6EFF;
+  --neon-aqua:    #00B8D4;
+  --text-bright:  #E8FAF4;
+  --text-primary: #C2E8D8;
+  --text-secondary:#7AAA98;
+  --text-muted:   #3D6B58;
+  --text-inverse: #030D0A;
+  --border-void:   rgba(0,200,150,0.04);
+  --border-subtle: rgba(0,200,150,0.09);
+  --border-accent: rgba(0,200,150,0.22);
+  --border-strong: rgba(0,200,150,0.48);
+  --glow-sm:  0 0 12px rgba(0,200,150,0.25);
+  --glow-md:  0 0 24px rgba(0,200,150,0.35), 0 0 60px rgba(0,200,150,0.12);
+  --glow-lg:  0 0 40px rgba(0,200,150,0.45), 0 0 100px rgba(0,200,150,0.15);
+  --shadow-card:   0 4px 24px rgba(0,0,0,0.6), 0 0 0 1px var(--border-subtle);
+  --shadow-card-hv:0 8px 48px rgba(0,0,0,0.75), 0 0 0 1px var(--border-accent);
+  --text-accent: var(--neon-primary);
+  --nav-bg:    rgba(3,13,10,0.88);
+  --nav-border:rgba(0,200,150,0.1);
+  color-scheme: dark;
+}

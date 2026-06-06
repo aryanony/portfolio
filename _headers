@@ -1,0 +1,6 @@
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+/*.html
+  Cache-Control: public, max-age=3600, must-revalidate
+/seo/sitemap.xml
+  Cache-Control: public, max-age=86400
