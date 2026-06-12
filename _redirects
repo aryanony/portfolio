@@ -1,0 +1,9 @@
+# Canonical redirects
+/home    /    301
+/index   /    301
+
+# Legacy URL support
+/portfolio    /    301
+
+# 404 fallback
+/*    /404.html    404

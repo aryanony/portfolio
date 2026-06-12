@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Page Not Found — Aaryan Gupta</title>
+  <meta name="robots" content="noindex">
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    :root{--teal:#00C896;--cyan:#00D4E8;--bg:#020C09;--surface:#07180F;--text:#C8E8DC;--muted:#7AADA0}
+    body{background:var(--bg);color:var(--text);font-family:'DM Sans',system-ui,sans-serif;
+      min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;
+      padding:2rem;text-align:center}
+    .logo{font-weight:800;font-size:1.5rem;color:var(--teal);margin-bottom:3rem;letter-spacing:-.04em}
+    .num{font-size:clamp(6rem,20vw,12rem);font-weight:800;line-height:1;
+      background:linear-gradient(135deg,var(--teal),var(--cyan));
+      -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+      margin-bottom:1rem}
+    h1{font-size:1.5rem;color:#F0FBF5;margin-bottom:1rem}
+    p{color:var(--muted);max-width:44ch;line-height:1.7;margin-bottom:2rem}
+    .actions{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center}
+    a.primary{padding:.75rem 2rem;background:var(--teal);color:#020C09;font-weight:700;text-decoration:none;
+      clip-path:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,10px 100%,0 calc(100% - 10px))}
+    a.ghost{padding:.75rem 2rem;border:1px solid rgba(0,200,150,0.25);color:var(--teal);text-decoration:none;
+      clip-path:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,10px 100%,0 calc(100% - 10px))}
+    a:hover{opacity:.85}
+    .grid{position:fixed;inset:0;pointer-events:none;
+      background-image:linear-gradient(rgba(0,200,150,0.03) 1px,transparent 1px),
+        linear-gradient(90deg,rgba(0,200,150,0.03) 1px,transparent 1px);
+      background-size:48px 48px}
+  </style>
+</head>
+<body>
+  <div class="grid" aria-hidden="true"></div>
+  <div class="logo">AG<span style="color:#00C896">.</span></div>
+  <div class="num" aria-hidden="true">404</div>
+  <h1>Page not found</h1>
+  <p>The page you are looking for does not exist or has been moved. Let us get you back on track.</p>
+  <div class="actions">
+    <a class="primary" href="/">Back to Home</a>
+    <a class="ghost" href="/#contact">Contact Aaryan</a>
+  </div>
+</body>
+</html>

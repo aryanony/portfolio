@@ -1,0 +1,44 @@
+{
+  "site": {
+    "domain": "aaaryangupta.com",
+    "url": "https://aaaryangupta.com",
+    "name": "Aaryan Gupta",
+    "tagline": "Technical Project Manager | Health-Tech & SaaS | Jaipur, India",
+    "description": "Freelance Technical PM specializing in Health-Tech, SaaS & AI delivery. 70+ markets. MCA graduate. Developer-turned-PM. Jaipur & Ahmedabad. Book a free 30-min call.",
+    "locale": "en_IN",
+    "language": "en"
+  },
+  "person": {
+    "name": "Aaryan Gupta",
+    "handle": "aryanony",
+    "title": "Technical Project Manager",
+    "email": "aryanrajk63@gmail.com",
+    "phone": "+916205650368",
+    "whatsapp": "916205650368",
+    "calendly": "https://calendly.com/aaryanpm/30min",
+    "location": {
+      "city": "Jaipur",
+      "state": "Rajasthan",
+      "country": "India",
+      "countryCode": "IN",
+      "secondary": "Ahmedabad"
+    }
+  },
+  "social": {
+    "linkedin": "https://linkedin.com/in/aryanony/",
+    "github": "https://github.com/aryanony",
+    "twitter": "https://x.com/aryanony/",
+    "instagram": "https://instagram.com/aryanony/"
+  },
+  "stats": {
+    "markets": "70+",
+    "projects": "20+",
+    "experience": "3+",
+    "products": "5+"
+  },
+  "projects": {
+    "projectport": "https://projectsport.vercel.app/",
+    "uibrium": "https://uibrium.vercel.app/",
+    "portfolio": "https://aryanony.github.io/portfolio"
+  }
+}

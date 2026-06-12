@@ -1,0 +1,20 @@
+{
+  "name": "Aaryan Gupta — Technical Project Manager",
+  "short_name": "Aaryan Gupta",
+  "description": "Freelance Technical PM specializing in HealthTech, SaaS & AI delivery. 70+ markets. Jaipur, India.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#020C09",
+  "theme_color": "#00C896",
+  "orientation": "portrait-primary",
+  "categories": ["business", "productivity"],
+  "lang": "en-IN",
+  "dir": "ltr",
+  "icons": [
+    { "src": "/assets/images/favicon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/assets/images/favicon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ],
+  "screenshots": [
+    { "src": "/assets/images/og/og-aaryan-gupta.jpg", "sizes": "1200x630", "type": "image/jpeg", "form_factor": "wide" }
+  ]
+}
