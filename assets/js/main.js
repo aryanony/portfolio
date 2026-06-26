@@ -474,7 +474,7 @@ function initCookies() {
 function initCopyEmail() {
   document.querySelectorAll('[data-copy-email]').forEach(btn => {
     btn.addEventListener('click', async () => {
-      const email = btn.dataset.copyEmail || 'aryanrajk63@gmail.com';
+      const email = btn.dataset.copyEmail || 'aaryangupta.pm@gmail.com';
       try {
         await navigator.clipboard.writeText(email);
         const orig = btn.textContent;
