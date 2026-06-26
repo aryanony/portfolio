@@ -110,4 +110,4 @@ portfolio/
 ---
 
 *Built with Vanilla HTML + CSS + JS | Zero frameworks | Maximum performance*
-*Aaryan Gupta · aryanrajk63@gmail.com · aaaryangupta.com*
+*Aaryan Gupta · aaryangupta.pm@gmail.com · aaryangupta.com*
